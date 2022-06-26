@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find and replace Using JS</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <h1>FIND & REPLACE USING JAVASCRIPT</h1>
+    <div id="haystack">
+       <p>JavaScript is an advanced programming language that makes web pages more interactive and dynamic whereas HTML is a standard markup language that provides the primary structure of a website.
+        JavaScript simply adds dynamic content to websites to make them look good and HTML work on the look of the website without the interactive effects and all.
+        JavaScript manipulates the content to create dynamic web pages whereas HTML pages are static which means the content cannot be changed.
+        JavaScript is not cross-browser compatible whereas HTML is cross-browser compatible.
+        JavaScript can be embedded inside HTML but HTML can not be embedded inside JavaScript.</p>
+
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td>Find</td>
+            <td><input id="needle" name="needle" type="text"></td>
+        </tr>
+        <tr>
+            <td>Replacment</td>
+            <td><input id="replacement" name="replacement" type="text"></td>
+        </tr>
+    </table>
+    <input type="button" value="Find"
+        onClick="findMyText(document.getElementById('needle').value, document.getElementById('replacement').value);">
+        <input type="button" value="Replace"
+        onClick="findMyText(document.getElementById('needle').value, document.getElementById('replacement').value);">
+    
+    <script src="./assests/css/JS/app.js"></script>
+</body>
+
+</html>
